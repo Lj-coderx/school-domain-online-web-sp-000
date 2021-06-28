@@ -13,7 +13,7 @@ class School
     def add_student(name, grade)
         if(roster[grade])
             roster[grade] << name
-        else 
+        else
             roster[grade] = []
             roster[grade] << name
         end
@@ -25,7 +25,7 @@ class School
         roster[grade]
     end
 
-    def sort 
+    def sort
         roster.each do |key, value|
             value.sort!
         end
